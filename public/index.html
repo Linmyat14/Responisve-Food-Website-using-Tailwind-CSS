@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ninja Food</title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+<body class=" text-gray-600 font-body">
+     <div class="grid lg:grid-cols-3"> <!-- content wrapper -->
+        <div class=" col-span-2 lg:col-span-1 mb-5">
+            <div class="px-2 flex items-center lg:justify-end">
+            <h1 class=" font-bold uppercase text-sm md:text-xl  p-4 border-b border-gray-100 mb-3 hover:text-gray-800 cursor-pointer">Food Ninja</h1>
+            <div class="ms-auto me-2 cursor-pointer lg:hidden block" id="burger">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+                  
+            </div>
+            </div>
+            <nav class="flex justify-end mt-7 hidden lg:block" id="menu">
+                <ul class="">
+                    <li class=" font-bold flex justify-end mb-1 pe-2 border-e-4 border-red-500">
+                        <a class="me-2" href="#">Home</a>
+                        <svg 
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                      </svg>
+                    </li>
+                    <li class="flex justify-end mb-1 pe-2 border-e-4 border-white">
+                        <a class="me-2" href="#">About</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" />
+                          </svg>
+                    </li>
+                    <li class="flex pe-2 border-e-4 border-white justify-end">
+                        <a class="me-2" href="#">Contact</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                          </svg>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        
+        <main class=" px-24 py-6 bg-gray-100 col-span-2">
+        <header class="">
+            <div class="mb-3 flex justify-center sm:justify-center md:justify-end text-red-400">
+                <button class="btn md:border-2 border-red-500 hover:bg-red-500 hover:text-white me-4 transition ease-out duration-100">Log in</button>
+                <button class="btn md:border-2 border-red-500 hover:bg-red-500 hover:text-white  transition ease-out duration-100">Sign up</button>
+            </div>
+        </header>
+
+        <div class="">
+            <h2 class=" text-6xl font-bold mb-4">Recipes</h2>
+            <h3 class=" text-2xl font-semibold mb-5">For Ninjas</h3>
+            
+            <div class="">
+                <h4 class=" font-bold mb-5 border-b pb-2">Latest Recipes</h4>
+            
+            <div class="grid md:grid-cols-3 gap-10">
+                <!-- cards go here -->
+                <div class="card hover:shadow-lg duration-200"> 
+                  <img src="https://i.pinimg.com/564x/09/de/fc/09defc284b6c7c4d17e1ede6e32aec46.jpg" alt="stew"
+                  class="w-full h-32 md:h-48 object-cover">
+                  <div class="m-4">
+                    <span class="font-bold">5 Bean Chili Stew</span>
+                    <span class="block font-light">Recipe by Mario</span>
+                  </div>
+
+                  <div class="badge">
+                    <svg class="w-5 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                      </svg>
+                    <span>25 min</span>
+                  </div>
+                </div>
+
+                <div class="card hover:shadow-lg duration-200"> 
+                    <img src="https://i.pinimg.com/564x/84/7e/2b/847e2bedc2606cf3b38264965e8dfc06.jpg" alt="noodle"
+                    class="w-full h-32 md:h-48 object-cover">
+                    <div class="m-4">
+                      <span class="font-bold">5 Bean Chili Stew</span>
+                      <span class="block font-light">Recipe by Mario</span>
+                    </div>
+  
+                    <div class="badge">
+                        <svg class="w-5 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                          </svg>
+                        <span>25 min</span>
+                    </div>
+                  </div>
+
+                  <div class="card hover:shadow-lg duration-200"> 
+                    <img src="https://i.pinimg.com/564x/e1/4f/df/e14fdf6ca7ff2a4cb48bff7ae95000a3.jpg" alt="stew"
+                    class="w-full h-32 md:h-48 object-cover">
+                    <div class="m-4">
+                      <span class="font-bold">5 Bean Chili Stew</span>
+                      <span class="block font-light">Recipe by Mario</span>
+                    </div>
+  
+                    <div class="badge">
+                        <svg class="w-5 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                          </svg>
+                        <span>25 min</span>
+                    </div>
+                  </div>
+
+              </div>
+
+              <h4 class="mb-5 mt-7 font-bold border-b pb-2">Most Popular</h4>
+
+        <div>
+          <!-- cards go here -->
+        </div>
+
+        <div class="flex justify-center">
+            <div class="btn bg-gray-300 hover:shadow-inner transition ease-out hover:duration-200 transform hover:scale-125">Load more</div>
+        </div>    
+
+        </div>  
+        </div>
+    </main>
+    </div>
+<script src="index.js"></script>
+</body>
+</html>
